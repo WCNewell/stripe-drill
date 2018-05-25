@@ -10,6 +10,10 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 app.use(cors())
 
+app.get('/', (req, res) => {
+  res.json('She done already done had hersss')
+})
+
 app.post('/', (req, res) => {
   const stripe = require("stripe")(process.env.STRIPE_SECRET)
 

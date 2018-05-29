@@ -32,7 +32,7 @@ function charge(amount, service, token) {
     return new Promise((resolve, reject) => {
         stripe.charges.create({
             amount,
-            currency: "usd",
+            currency: 'usd',
             description: service,
             source: token
         }, (error, charge) => {
@@ -47,7 +47,7 @@ function charge(amount, service, token) {
 
 app.use((err, req, res, next) => {
     res.status(404)
-    const error = new Error('Not Found. 🔍')
+    const error = new Error('Not Found.')
     next(error)
 })
 

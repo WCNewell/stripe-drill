@@ -1,8 +1,3 @@
-// const cardElement = document.querySelector('#card-element')
-// const paymentForm = document.querySelector('form')
-// const message = document.querySelector('#message')
-// const errors = document.querySelector('#errors')
-
 const stripe = Stripe('pk_test_KTbKaGW7CdETzcGFc6ASKK93')
 const elements = stripe.elements()
 
